@@ -1,0 +1,107 @@
+:root{
+    --background-color: #101820ff;
+    --colorr-1: #f2aa4cff;
+    --colorr-2: #bbbbbbbb;
+    --colorr-3: #81818180;
+}
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--background-color) !important;
+}
+/*navbar css*/
+.navbar-brand{
+    font-size: 22px;
+    color:aliceblue !important;
+}
+.navbar-nav li{
+    margin: 0px 8px;
+}
+
+.navbar-nav li a{
+    color: aliceblue !important;
+    font-size:15px;
+}
+.nav-link::before{
+    content: "";
+    height: 2px;
+    width: 17px;
+    background-color: aliceblue;
+    bottom: 7px;
+    position: absolute;
+    transition: 0.45s;
+}
+.nav-link:hover::before{
+    content: "";
+    height: 2px;
+    width: 27px;
+    background-color: aliceblue;
+    bottom: 7px;
+    position: absolute;
+}
+
+/* card css */
+
+.Projects_section{
+    padding: 100px 0px;
+}
+.card{
+    background-color: #282a39;
+    color: aliceblue;
+}
+.card_section{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-img-top{
+    height: 300px;
+}
+
+/* Footer */
+.page-footer{
+    background-color: #282a39;
+    text-align: center;
+    color: aliceblue;
+}
+
+.card-img-top{
+    height: 300px;
+}
+
+/* contact form */
+.contact-us {
+    padding: 70px 0px;
+}
+.section-title h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    border-bottom: 5px solid #f2aa4cff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.section-title p {
+    color: #e8e8e8;
+    margin-bottom: 30px;
+}
+.contact-us input,
+.contact-us textarea {
+    background: #fafafa;
+}
+.contact-us textarea {
+    min-height: 188px;
+    max-width: 100%;
+}
+.contact-us .map {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+/* cv */
+.cv{
+    padding: 100px 0px;
+}

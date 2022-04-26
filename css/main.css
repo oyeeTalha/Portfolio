@@ -1,0 +1,312 @@
+:root{
+    --background-color: #101820ff;
+    --colorr-1: #f2aa4cff;
+    --colorr-2: #bbbbbbbb;
+    --colorr-3: #81818180;
+}
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--background-color) !important;
+}
+/*navbar css*/
+.navbar-brand{
+    font-size: 22px;
+    color:aliceblue !important;
+}
+.navbar-nav li{
+    margin: 0px 8px;
+}
+
+.navbar-nav li a{
+    color: aliceblue !important;
+    font-size:15px;
+}
+.nav-link::before{
+    content: "";
+    height: 2px;
+    width: 17px;
+    background-color: aliceblue;
+    bottom: 7px;
+    position: absolute;
+    transition: 0.45s;
+}
+.nav-link:hover::before{
+    content: "";
+    height: 2px;
+    width: 27px;
+    background-color: aliceblue;
+    bottom: 7px;
+    position: absolute;
+}
+
+/* Hero-Section */
+
+.hero-section .row{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-section .row h1 ,h2 ,h3 ,h4, p{
+    color: aliceblue;
+
+}
+.hero-section .row h3{
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.hero-section .row h3::after{
+    content: "";
+    text-align: center;
+    height: 2px;
+    width: 90px;
+    background-color: aliceblue;
+    top: 10px;
+    position: absolute;
+    margin-left: 6px;
+}
+.hero-section .row h1{
+    font-size: 65px;
+    font-weight: 800;
+}
+.hero-section .row h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 8px 8px;
+}
+.hero-section .row p{
+    font-size: 13px;
+    margin-top: 13px;
+    line-height: 21px;
+    color: var(--colorr-2)!important;
+}
+.hero-section .row button{
+    border-radius:10px ;
+    font-size:19px ;
+    color:#fff;
+    background-color:var(--colorr-1);
+    border: 3px solid var(--colorr-1);
+    width: 113px;
+    margin-top: 10px;
+}
+.hero-section .row button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+    background-color: aliceblue;
+    color: black;
+    border: aliceblue;
+}
+
+.hero-section .row img{
+    width: 80%;
+}
+
+@media (max-width:1200px) and (min-width:993px){
+    .hero-section .row h1{
+        font-size: 58px;
+    }
+}
+@media(max-width:993px) and (min-width:763px){
+    .hero-section .row h1{
+        font-size: 42px;
+    }
+    .hero-section .row h2{
+        font-size: 15px;
+    }
+    .hero-section .row h3{
+        font-size: 15px;
+    }
+    .hero-section .row p{
+        font-size: 11px;
+    }
+    .hero-section .row button{
+        font-size: 15px;
+    }
+}
+@media(max-width:763px) and (min-width:500px){
+    .hero-section{
+        margin:55px 0px;
+    }
+    .hero-section .row h1{
+        font-size: 46px;
+        text-align: center;
+    }
+    .hero-section .row h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .hero-section .row p{
+        font-size: 11px;
+        text-align: center;
+    }
+    .hero-section .btn-container{
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-section .row h3{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .hero-section .row h3:after{
+        width: 0px;
+    }
+    .hero-section .btn-container button{
+        width:100px;
+        height: 43px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .hero-section .row img{
+        width: 60%;
+        margin-top: 20px;
+    }
+}
+
+
+/* about us section */
+.about_section{
+    background-color: #282a39;
+    padding: 170px 0px;
+}
+.about_section #heading{
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    line-height: 57px;
+}
+.about_section .lets_talk{
+    color: aliceblue;
+    font-weight: 400;
+    margin-top: 14px;
+}
+.about_section #email{
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--colorr-1);
+    margin-top: 45px;
+    word-spacing: 6px;
+}
+.about_section .Socials{
+    margin-top:15px;
+}
+.about_section .Socials h5{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 400;
+    word-spacing: 8px;
+}
+.about_section .aboutmeSec2 #txt{
+    font-size: 15px;
+    margin-top: 13px;
+    line-height: 25px;
+    color: var(--colorr-2);
+}
+.about_section .aboutmeSec2 hr{
+    margin: 0px;
+    border: 0.5px solid var(--colorr-1);
+    width: 6rem;
+}
+.about_section .aboutmeSec2 table td{
+    border: none;
+    color: aliceblue;
+}
+.about_section .aboutmeSec2 button{
+    border-radius: 7px;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: var(--colorr-1);
+    border: 3px solid var(--colorr-1);
+    font-family: 'poppins',sans-serif;
+    margin-top: 10px;
+}
+.about_section .aboutmeSec2 button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+}
+@media (max-width:993px) and (min-width:760px){
+.about_section .aboutmeSec2 #txt{
+    font-size: 12px;
+}
+.about_section #heading{
+    font-size: 27px !important;
+}
+}
+@media (max-width:500px) and (min-width:200px){
+    .about_section .aboutmeSec2{
+        padding-top: 20px;
+    }
+}
+
+/* SKILLS SECTION */
+.skills_section{
+    padding: 100px 0px;
+}
+.skills_section_left_section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.skills_section #heading{
+    font-size: 50px;
+    font-weight: 600;
+}
+.skills_section hr{
+    border: 0.5px solid var(--colorr-1);
+    width:6rem;
+    margin: 12px 0px;
+}
+.skills_section p{
+    color: var(--colorr-2);
+    font-size: 13px;
+}
+.skills_section .social-media-icons .list-group-item{
+    border: none;
+    color: aliceblue;
+    border-left: 2px solid var(--colorr-1);
+    border-radius: 0px;
+    margin: 5px 0px;
+    width: 200px;
+    background: var(--colorr-3);
+    font-size: 14px
+}
+.skills_section .social-media-icons .list-group-item a{
+    transition: 0.5s;
+    color: aliceblue;
+    text-decoration: none;
+}
+.skills_section .social-media-icons .list-group-item:hover a{
+    margin-left: 10px;
+}
+.skills_section_right_section .each_skill{
+margin: 25px 0px;
+}
+.skills_section_right_section .each_skill span{
+     color: aliceblue;
+     font-size: 14px;
+}
+.skills_section_right_section .each_skill .progress{
+    background-color: var(--colorr-3);
+    border-radius: 100px;
+    margin-top: 3px;
+    height: 10px;
+}
+.skills_section_right_section .each_skill .progress-bar{
+    background: var(--colorr-1);
+    color: transparent;
+}
+
+
+/* Footer */
+.page-footer{
+    background-color: #282a39;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+
